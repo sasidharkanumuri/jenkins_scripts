@@ -8,8 +8,7 @@ pipelineJob($job_name)
   definition {
   cps {
   script(readFileFromWorkspace('pipeline.groovy')
-  sandbox()
  
-  }
+ }
   }			
 }
