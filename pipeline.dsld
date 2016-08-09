@@ -1,4 +1,4 @@
-job_name='newLoggingSample'
+$job_name='newLoggingSample'
 pipelineJob($job_name) 
 {
  logRotator(1,2,3,4)
