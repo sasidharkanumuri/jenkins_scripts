@@ -8,12 +8,12 @@ pipelineJob($job_name)
   definition {
   cpsScm {
  scm {
-        git('git@git') { node -> // is hudson.plugins.git.GitSCM
-            node / gitConfigName('sasidharkanumuri')
-            node / gitConfigEmail('kanumuri1994@gmail.com')
-        }
+      git {
+            remote {
+                github('sasidharkanumuri', '47:da:ea:27:f4:0d:34:15:3e:3d:65:fb:55:89:fa:27')
+            }
     }
-  scriptPath(readFileFromWorkspace('pipeline.groovy'))
+    }
+    }
  }			
-}
 }
