@@ -8,8 +8,8 @@ pipelineJob($job_name)
   definition {
   cpsScm {
   scm{
-  
   scriptPath(readFileFromWorkspace('pipeline.groovy'))
  }			
+}
 }
 }
