@@ -6,8 +6,10 @@ pipelineJob($job_name)
  colorizeOutput('xterm')
  }
   definition {
-  cps {
-  script(readFileFromWorkspace('pipeline.groovy'))
+  cpsScm {
+  scm{
+  
+  scriptPath(readFileFromWorkspace('pipeline.groovy'))
  }			
 }
 }
