@@ -1,0 +1,15 @@
+job_name='newLoggingSample'
+pipelineJob($job_name) 
+{
+ logRotator(1,2,3,4)
+ wrappers{
+ colorizeOutput('xterm')
+ }
+  definition {
+  cps {
+  script(readFileFromWorkspace('pipeline.groovy')
+  sandbox()
+ 
+  }
+  }			
+}
