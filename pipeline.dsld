@@ -8,12 +8,8 @@ pipelineJob($job_name)
   definition {
   cpsScm {
  scm {
-      git {
-            remote {
-                github('sasidharkanumuri', '47:da:ea:27:f4:0d:34:15:3e:3d:65:fb:55:89:fa:27')
-            }
-    }
-    }
+      git('https://github.com/sasidharkanumuri/sasi', master , null)
     }
  }			
+}
 }
