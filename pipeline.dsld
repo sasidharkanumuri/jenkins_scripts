@@ -8,7 +8,7 @@ pipelineJob($job_name)
   definition {
   cpsScm {
  scm {
-      git('https://github.com/sasidharkanumuri/sasi', master , null)
+      git('https://github.com/sasidharkanumuri/sasi', 'master' , null)
     }
  }			
 }
