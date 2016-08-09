@@ -7,7 +7,12 @@ pipelineJob($job_name)
  }
   definition {
   cpsScm {
-
+ scm {
+        git('git@git') { node -> // is hudson.plugins.git.GitSCM
+            node / gitConfigName('sasidharkanumuri')
+            node / gitConfigEmail('kanumuri1994@gmail.com')
+        }
+    }
   scriptPath(readFileFromWorkspace('pipeline.groovy'))
  }			
 }
