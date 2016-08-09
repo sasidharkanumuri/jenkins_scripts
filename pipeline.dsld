@@ -1,7 +1,7 @@
 job_name='newLoggingSample'
 pipelineJob($job_name) 
 {
- logRotator(1 2 3 4)
+ logRotator(1,2,3,4)
  wrappers{
  colorizeOutput('xterm')
  }
